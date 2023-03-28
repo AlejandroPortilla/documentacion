@@ -17,7 +17,7 @@ public class Empresa {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // estamos llamando al a clase Login e inicia la interfaz
+        // estamos llamando al a clase Login y se inicia la interfaz
         Login login=Login.getLogin();
         login.setVisible(true);
     }
