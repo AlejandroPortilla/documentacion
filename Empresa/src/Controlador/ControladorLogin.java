@@ -45,12 +45,17 @@ public class ControladorLogin implements DAOLogin{
         return estado;
     }
 
+    /**
+     * el usuario puede iniciarse
+     */
     @Override
     public String getUsuario() {
         
         return this.usuario;
     }
-        
+      /**
+     *la contraseña pueda ser modificada y se vuelve funcional
+     */  
     @Override
     public boolean CambiarContrasenia(String contrasenia) {
         boolean estado=true;        
