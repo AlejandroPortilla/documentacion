@@ -25,7 +25,7 @@ public class ControladorLogin implements DAOLogin{
     
     public static ControladorLogin getControladorLogin(){
     /*
-     *Creacion de singleton   
+     *Creacion del singleton   
      */    
         if(controladorLogin==null)
             controladorLogin=new ControladorLogin();
@@ -36,7 +36,7 @@ public class ControladorLogin implements DAOLogin{
     @Override
     public boolean VerificarUsuarios(String usuario, String contrasenia) {
     /*
-    * Verificacion de usuario y contraeña    
+    * Verificacion de usuario y contraseña    
     */
         boolean estado=false;
         if((usuario.equals("daniel"))&&(contrasenia.equals("12345")))
