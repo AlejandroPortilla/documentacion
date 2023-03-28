@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controlador;
 
 import DAO.DAOLogin;
@@ -28,6 +24,9 @@ public class ControladorLogin implements DAOLogin{
     }
     
     public static ControladorLogin getControladorLogin(){
+    /*
+     *Creacion de singleton   
+     */    
         if(controladorLogin==null)
             controladorLogin=new ControladorLogin();
         
@@ -36,8 +35,10 @@ public class ControladorLogin implements DAOLogin{
 
     @Override
     public boolean VerificarUsuarios(String usuario, String contrasenia) {
+    /*
+    * Verificacion de usuario y contraeña    
+    */
         boolean estado=false;
-        
         if((usuario.equals("daniel"))&&(contrasenia.equals("12345")))
             estado=true;
         
@@ -49,7 +50,7 @@ public class ControladorLogin implements DAOLogin{
         
         return this.usuario;
     }
-
+        
     @Override
     public boolean CambiarContrasenia(String contrasenia) {
         boolean estado=true;        
