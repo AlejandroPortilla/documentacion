@@ -9,7 +9,7 @@ package DAO;
  * @author Alejandro Portilla y Juan Arevalo
  */
 public interface DAOLogin {
-    //aqui yo no supe si era documentarlo como nos enseño o como comentario aswi que decidi hacerlo por comentario
+    //aqui yo no supe si era documentarlo como nos enseño o como comentario asi que decidi hacerlo por comentario de doble slash
     
     // con esto se evita que accedan directamente a los datos, Y se proteje a los metodos de ControladorLogin
     public boolean VerificarUsuarios(String usuario, String contrasenia);
