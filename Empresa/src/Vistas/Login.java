@@ -109,17 +109,17 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void usuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_usuarioMouseClicked
-        // TODO add your handling code here:
+        // Quita el texto existente en el cuadro de usuario al precionar con el mouse
         usuario.setText("");
     }//GEN-LAST:event_usuarioMouseClicked
 
     private void contraseniaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_contraseniaMouseClicked
-        // TODO add your handling code here:
+        // Quita el texto existente en el cuadro de contraseña al precionar con el mouse
         contrasenia.setText("");
     }//GEN-LAST:event_contraseniaMouseClicked
 
     private void olvidoMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_olvidoMouseEntered
-        // TODO add your handling code here:
+        // Cambia el color de boton "¿Olvido su contraseña?"
         olvido.setForeground(new java.awt.Color(51, 0, 255));
     }//GEN-LAST:event_olvidoMouseEntered
 
@@ -129,7 +129,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_olvidoMouseExited
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
+        // Boton para Iniciar sesion
         
         if(cLogin.VerificarUsuarios(usuario.getText(), contrasenia.getText()))
             JOptionPane.showMessageDialog(this, "Usuario correcto", "Información", JOptionPane.OK_OPTION);
